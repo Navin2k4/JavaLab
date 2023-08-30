@@ -1,3 +1,5 @@
+
+package employee;
 import java.util.Scanner;
 class details{
     int Empid,salary;
@@ -11,10 +13,14 @@ class details{
     public int getID(){return Empid;}
     public String getFirstName(){return F_Name;}
     public String getLastName(){return L_Name;}
+    public String getName(){return F_Name+" "+L_Name;}
     public int getSalary(){return salary;}
     public void setSalary(int sa){salary=sa;}
     public int getAnnualSalary(){return salary = salary * 12;}
     public int raiseSalary(int percent) {return salary = (int) (salary * (1 + percent / 100.0));}
+    public String toString(){
+        return "EMPID : "+ Empid +" Name :"+F_Name+" "+L_Name+" Salary :"+salary;
+    }
 
 }
 class Employee {
@@ -74,14 +80,10 @@ class Employee {
                     break;
                 case 3:
                     for (int i = 0; i < n; i++) {
-                        System.out.println();
-                        System.out.println("Employee " + (i + 1) + " Details");
-                        System.out.println("Employee ID: " + emp[i].getID());
-                        System.out.println("Name: " + emp[i].getFirstName() + " " + emp[i].getLastName());
-                        System.out.println("Salary: " + emp[i].getSalary());
-                        System.out.println("Annual Salary: " + emp[i].getAnnualSalary());
+                        System.out.println(emp[i]);
                     }
                     break;
+
                 case 4:
                     continueUpdating = false;
                     System.out.println("Exiting...");
