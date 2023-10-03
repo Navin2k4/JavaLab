@@ -1,0 +1,15 @@
+Create an ApartmentException class whose constructor receives a 
+String that holds a street address, an apartment number, a number of bedrooms, 
+and a rent value for an apartment. Save the file as ApartmentException.java. 
+
+Create an Apartment class with those fields. The Apartment constructor requires 
+values for each field. Upon construction, throw an ApartmentException if the apartment
+number does not consist of three digits, 
+if the number of bedrooms is less than 1 or more than 4, or if the 
+rent is less than $500 or over $2,500. Save the class as Apartment.java. 
+
+Write an application that establishes an array of at least six Apartment objects 
+with valid and invalid values. Display an appropriate message when an Apartment object 
+is created successfully and when one is not. Save the file as ThrowApartmentException.java.
+
+
