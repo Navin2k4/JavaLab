@@ -58,19 +58,12 @@ public class SnowmanGUI extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-
         Graphics2D g2d = (Graphics2D) g;
-
-        // Draw snowman body
         Ellipse2D.Double body = new Ellipse2D.Double(snowmanX, snowmanY, 100, 100);
         g2d.setColor(Color.WHITE);
         g2d.fill(body);
-
-        // Draw snowman head
         Ellipse2D.Double head = new Ellipse2D.Double(snowmanX + 25, snowmanY - 50, 50, 50);
         g2d.fill(head);
-
-        // ... (rest of the snowman drawing code remains the same)
     }
 
     public static void main(String[] args) {
